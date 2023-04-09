@@ -461,16 +461,96 @@
             </li>
           </ul>
         </div>
+
+        <div class="form">
+          <label class="footer-title form-label"
+            >Підпишіться на розсилку
+            <input
+              class="form-input"
+              type="text"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="main-btn form-btn" type="submit">Підписатися</button>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-item" width="18" height="18">
             <use href="./imges/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <form class="backdrop-form">
+          <p class="backdrop-form-title">
+            Залиште свої дані, ми вам передзвонимо
+          </p>
+
+          <div class="form-field">
+            <label class="backdrop-label"
+              >Ім'я
+              <span class="form-input-wraper">
+                <input class="backdrop-input" type="text" name="user-name" />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./imges/sprite.svg#icon-person-black"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label class="backdrop-label"
+              >Телефон
+              <span class="form-input-wraper">
+                <input class="backdrop-input" type="tel" name="user-tel" />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./imges/sprite.svg#icon-phone-black"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label class="backdrop-label"
+              >Пошта
+              <span class="form-input-wraper">
+                <input class="backdrop-input" type="email" name="user-email" />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./imges/sprite.svg#icon-email-black"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-field field-textarea">
+            <label class="backdrop-label"
+              >Коментар
+              <textarea
+                class="backdrop-textarea"
+                name="messsage"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="form-field-wraper">
+            <input
+              class="checkbox-input checkbox"
+              type="checkbox"
+              name="accept-policy"
+              id="accept-policy"
+            />
+            <label class="checkbox-label" for="accept-policy">
+              Погоджуюся з розсилкою та приймаю &thinsp;
+              <a href="" class="checkbox-link"> Умови договору</a>
+            </label>
+          </div>
+          <button class="modal-submit" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
