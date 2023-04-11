@@ -577,6 +577,10 @@ img {
   color: var(--accent-text-color);
 }
 
+
+.footer-right{
+    margin-right: auto;
+}
 .footer-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -588,7 +592,8 @@ img {
 
 .footer-right-list {
   display: flex;
-  margin-right: 90px;
+  /* margin-right: 90px; */
+
 }
 
 .footer-right-list-item:not(:last-child) {
@@ -613,10 +618,6 @@ img {
 }
 
 /* -----form------- */
-.form {
-  display: flex;
-  align-items: flex-end;
-}
 
 .form-label {
   margin-bottom: 0;
@@ -660,6 +661,7 @@ img {
   background-image: url(../imges/icon-send.svg);
 }
 
+
 /* --------backdrop--------- */
 .backdrop {
   position: fixed;
@@ -680,7 +682,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 530px;
-  height: 620px;
+  height: 580px;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -722,6 +724,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-item{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-btn:hover .modal-item,
 .modal-btn:focus .modal-item {
   fill: var(--accent-color);
@@ -737,7 +743,7 @@ img {
   line-height: 1.15;
   text-align: center;
   color: var(--primary-text-color);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .form-field {
@@ -787,16 +793,16 @@ img {
 }
 
 .field-textarea {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .backdrop-textarea {
   resize: none;
   width: 100%;
-  height: 120px;
+  height: 100px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-top: 4px;
+   margin-top: 4px; 
   padding: 12px 16px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -816,6 +822,7 @@ img {
 
 
 .form-field-wraper{
+  text-align: center;
  margin-bottom: 30px; 
 }
 
